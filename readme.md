@@ -37,6 +37,9 @@
 	stopping a container does not not delete it. docker rm will do that.
 	docker rm test
 
+	# setup private docker registry
+	docker run -p 5000 stackbrew/registry
+
 ## Notes
 
 * if you don't map folders(between your dev machine and the container) you have to rebuild the image on every code change
