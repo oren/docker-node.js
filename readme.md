@@ -1,6 +1,6 @@
 # Docker and Node.js
 
-## build image
+## Build image
 
 	docker build -t oren/hello-node .
 
@@ -8,11 +8,13 @@
 
 	docker run -p 3000:3000 -d -name test -v `pwd`:/root oren/hello-node
 
-## Cheat Sheet
+## Install docker on Debian Wheezy
 
 	curl get.docker.io | bash
 	echo net.ipv4.ip_forward=1 | sudo tee /etc/sysctl.d/99-docker.conf
 	sudo sysctl --system
+
+## Cheat Sheet
 
 	create image from a Dockerfile
 	docker build -t oren/hello-node .
