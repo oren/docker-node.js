@@ -40,8 +40,9 @@
 	docker rm test
 
 	# setup private docker registry
-	# https://github.com/dotcloud/docker-registry
-	docker run -p 5000 stackbrew/registry
+	git clone https://github.com/dotcloud/docker-registry
+	docker run -p 5000:5000 registry
+	
 
 ## Notes
 
